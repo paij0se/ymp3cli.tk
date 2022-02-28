@@ -1,17 +1,20 @@
 const ymp3cli = fetch("https://ymp3cli-api.elpanajose.repl.co/");
 ymp3cli
   .then((r) => {
-    return r.json();
+    return r.text();
   })
   .then((jsonData) => {
-    document.getElementById("ymp3cli").innerHTML = jsonData.id;
+    // only get the number
+    document.getElementById("ymp3cli").innerHTML = jsonData.match(/\d+/g).join("");
   });
 
 const lastUser = fetch("https://ymp3cli-api.elpanajose.repl.co/");
 lastUser
   .then((r) => {
-    return r.json();
+    return r.text();
   })
   .then((jsonData) => {
-    document.getElementById("last-user").innerHTML = jsonData.lastUser;
+    // {"id": 24, "lastUser": "papijose"}
+    const lastUser = jsonData.split(",")[1].split(":")[1].split('"')[1];
+    document.getElementById("last-user").innerHTML = lastUser;
   });
