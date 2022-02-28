@@ -1,11 +1,10 @@
 const ymp3cli = fetch("https://ymp3cli-api.elpanajose.repl.co/");
 ymp3cli
   .then((r) => {
-    return r.text();
+    return r.json();
   })
   .then((jsonData) => {
-    // only get the number
-    document.getElementById("ymp3cli").innerHTML = jsonData.match(/\d+/g).join("");
+    document.getElementById("ymp3cli").innerHTML = jsonData.id
   });
 
 const lastUser = fetch("https://ymp3cli-api.elpanajose.repl.co/");
