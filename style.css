@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap");
+
+body {
+  background-color: #212529;
+}
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 3vw;
+  color: #f0f0f0;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 5vw;
+  color: #f1f1f1;
+}
+#ymp3cli-css {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  color: rgb(48, 252, 48);
+  font-size: 2vw;
+}
