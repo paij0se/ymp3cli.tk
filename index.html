@@ -1,48 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ymp3cli</title>
-    <meta property="og:title" content="ymp3cli" />
-    <meta
-      property="og:image"
-      content="https://c.tenor.com/XmEgf6XjPRQAAAAd/skull.gif"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="600" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Hey! listen music like a hacker" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ymp3cli - Listen music like a Hacker!</title>
     <link
-      rel="shortcut icon"
-      href="https://c.tenor.com/XmEgf6XjPRQAAAAd/skull.gif"
-      type="image/x-icon"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+    />
+    <link
+    rel="shortcut icon"
+    href="https://c.tenor.com/XmEgf6XjPRQAAAAd/skull.gif"
+    type="image/x-icon"
+  />
+    <link rel="stylesheet" href="ymp-global.css" />
+    <link rel="stylesheet" href="ymp-landing.css" />
   </head>
   <body>
-    <script src="script.js"></script>
-    <div align="center">
-      <h1>ymp3cli has been used <code id="ymp3cli"></code> times</h1>
-      <h1>The last user of ymp3cli has been <code id="last-user"></code></h1>
-      <video width="720" height="640" controls>
-        <source src="video.mp4" type="video/mp4" />
-      </video>
-      <h1>What is ymp3cli?</h1>
-      <p>
-        <a href="https://github.com/paij0se/ymp3cli">ymp3cli</a> Is a simple
-        terminal tool for download and listen music like a hacker!
-      </p>
-      <img src="https://c.tenor.com/YbmQHDSJvbkAAAAC/thumbs-up-hacker.gif" />
-
-      <h1>Download ymp3cli (linux)</h1>
-      <code>
-        $ curl https://raw.githubusercontent.com/paij0se/ymp3cli/main/install.sh
-        | bash
-      </code>
-      <h1>
-        For windows download the binay file from
-        <a href="https://github.com/paij0se/ymp3cli/releases/latest">github</a>
-      </h1>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item">
+          <a id="github"
+            href="https://github.com/paij0se/ymp3cli/releases/latest"
+            class="link link--dark"
+            ><i class="fa fa-github"></i> Github</a
+          >
+        </li> 
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">ymp3cli</h1>
+      <p class="hero__description">A different way of listening to music.</p>
+      <p class="hero__description">ymp3cli has been used <code id="ymp3cli"></code> times</p>
     </div>
+    <div class="hero__terminal">
+      <pre>
+
+        <code class="shell-session demo">pai ~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper" align="center">
+      <h1 class="hero__title">What is ymp3cli?</h1>
+      <p>ymp3cli Is a simple terminal tool for download and listen music like a hacker!.       </p>
+      <div class="video__responsive" align="center" >
+        <video src="video.mp4" controls></video>
+      </div>
+      
+
+    
+      <div class="installation" align="center">
+        <h3 class="hero__title">Install instructions</h3>
+        <p>You can download the binary file from: https://github.com/paij0se/ymp3cli/releases <br> <br>
+      </div>
+
+
+    <footer class="footer" id="futer-xd">
+      Made with  ❤️ by 
+      <a href="https://github.com/paij0se" target="_blank" class="link link--light">Pai & KhanessKA</a>. 2022
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="ymp.js"></script>
   </body>
 </html>
