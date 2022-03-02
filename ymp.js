@@ -167,10 +167,19 @@ window.addEventListener("load", function () {
 });
 
 const ymp3cli = fetch("https://ymp3cli-api.herokuapp.com/");
+const lastU = fetch("https://ymp3cli-api.herokuapp.com/");
 ymp3cli
   .then((r) => {
     return r.json();
   })
   .then((jsonData) => {
     document.getElementById("ymp3cli").innerHTML = jsonData.id;
+  });
+
+lastU
+  .then((r) => {
+    return r.json();
+  })
+  .then((jsonData) => {
+    document.getElementById("last-user").innerHTML = jsonData.lastUser;
   });
