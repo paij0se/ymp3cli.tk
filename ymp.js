@@ -21,6 +21,8 @@ if (document.getElementsByClassName("demo").length > 0) {
   -u ,-update: Update ymp3cli to the latest version
   -d ,-download: Download a song from youtube
   -s ,-speed: That allows changing the playback speed
+  -sd ,-soundcloud: Download a song from soundcloud
+  -sp ,-spotify: Download a song from spotify
   -port: Port to run the server on
 
   Usage: ymp3cli -p [SONG]
@@ -43,7 +45,7 @@ if (document.getElementsByClassName("demo").length > 0) {
 
 
   `;
-  var speed = 60;
+  var speed = 30;
 
   function typeItOut() {
     if (i < txt.length) {
