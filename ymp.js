@@ -14,6 +14,7 @@ if (document.getElementsByClassName("demo").length > 0) {
   var i = 0;
   var txt = `ymp3cli
 
+
   Usage: ymp3cli -[OPTION]
   -h ,-help: Display the help command
   -v ,-version: Display the version of ymp3cli
@@ -22,8 +23,6 @@ if (document.getElementsByClassName("demo").length > 0) {
   -d ,-download: Download a song from youtube
   -s ,-speed: That allows changing the playback speed
   -sd ,-soundcloud: Download a song from soundcloud
-  -sp ,-spotify: Download a song from spotify
-  -port: Port to run the server on
 
   Usage: ymp3cli -p [SONG]
   ymp3cli -p <song.mp3>: play a single song
@@ -39,9 +38,7 @@ if (document.getElementsByClassName("demo").length > 0) {
 
 	 MIT License
 	 Made it by pai
-	 https://paijose.cf
-
-
+	 visit https://ymp3cli.tk
 
 
   `;
